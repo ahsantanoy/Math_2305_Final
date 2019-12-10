@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-def incident_edges(G, T):
+def incident_edges(G, T):  
     edges = []
-    for e in G[1]:
-        for v in T[0]:
+    for e in G[1]: #Loop all over the edges
+        for v in T[0]: #loop all over the vertices
             #doesn't consider edges already seen
             if v in e and e not in T[1]:
                 
